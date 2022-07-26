@@ -31,5 +31,5 @@ Convension para acomodar estilos
 html{
     /*para poder hacer uso del rem y utilizar medidas relativas en las fuentes*/
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
+    font-family:'DM Sans';
 }
