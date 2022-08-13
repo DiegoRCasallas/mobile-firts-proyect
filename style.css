@@ -508,6 +508,11 @@ main {
     
     font-size: 1.4rem;
 }
+.footer-icon {
+  text-align: center;
+
+}
+
 .footer-icon p{
     font-size: .8rem;
     color: var(--off-white);
