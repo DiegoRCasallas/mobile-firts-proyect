@@ -390,12 +390,13 @@ main {
 
 /*PLANS CARDS*/
 .main-plans-detail__container {
-    margin-top: 70px;
+    margin-top: 20px;
    
 }
 .slider{
     /*scroll cards planes*/
     display: flex;
+    align-items: center;
     height: 350px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
