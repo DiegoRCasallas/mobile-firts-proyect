@@ -113,8 +113,11 @@ main {
 }
 
 .main-exchange-container__title {
-    margin-top: 3rem;
+    margin: 3rem auto 0;
     padding: 0 1.5rem;
+    min-width: 288px;
+    max-width: 400px;
+
 }
 
 .main-exchange-container__title h2 {
@@ -126,23 +129,25 @@ main {
     margin-top: 1.8rem;
     font-family: 'DM Sans';
     font-size: 1.4rem;
-    color:var(--grey)
+    color: var(--grey)
 }
 
 /*TABLES*/
 .main-tables-container {
     text-align: center;
     background-color: var(--off-white);
+    padding-bottom: 65px;
 }
 
-.main-tables-container__title h2{
+.main-tables-container__title h2 {
     padding-left: 10px;
+    padding-bottom: 30px;
     text-align: start;
     margin: 10px auto;
     color: var(--bitcoin-orange);
     width: 200px;
     font-size: 1.8rem;
-   
+
 
 }
 
@@ -161,35 +166,40 @@ main {
 
 
 }
-.vector-table{
+
+.vector-table {
     position: absolute;
     right: 0;
-    transform: translate(400%,0);
+    transform: translate(400%, 0);
 }
+
 .grid-table div {
     height: 40px;
     width: 100%;
     background-color: var(--white);
-    
+
     padding: 10px;
     color: var(--grey)
-    
 }
-.table-right{
+
+.table-right {
     display: flex;
     align-items: center;
     font-size: 1.4rem;
 
 }
-.table-right span{
-   align-content: center;
-   align-self: center;
-   align-items: center;
+
+.table-right span {
+    align-content: center;
+    align-self: center;
+    align-items: center;
 
 }
-.table-left{
+
+.table-left {
     font-size: 1.6rem;
 }
+
 .grid-table--rad-top-left {
     border-top-left-radius: 8px;
 }
@@ -217,7 +227,7 @@ main {
 }
 
 .main-tables-container__update {
-    margin:16px auto;
+    margin: 16px auto 0;
     background-color: var(--soft-orange);
     padding: 8px;
     font-weight: bold;
@@ -228,4 +238,253 @@ main {
 
 .main-tables-container p span {
     font-weight: lighter;
+}
+
+/*PRODCUT DETAIL*/
+.main-product-detail {
+    background-color: var(--warm-black);
+    padding-top: 64px;
+    padding-bottom: 32px;
+}
+
+.main-product-detail div {
+    width: 288px;
+    margin: 0 auto 28px;
+}
+
+.main-product-detail div h2 {
+
+    text-align: center;
+    color: var(--white);
+    font-size: 2.4rem;
+
+}
+
+.main-product-detail div p {
+    margin-top: 28px;
+    text-align: center;
+    color: var(--grey);
+    font-size: 1.4rem;
+}
+.icon-papa{
+    display:block;
+    position: relative;
+    top:-80px;
+    left:50%;
+    background-image: url(./assets/pictures/papa.svg);
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 25px;
+    transform: translate(-50%,0);
+}
+
+.product-card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    padding: 20px 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    background-color: var(--black);
+    box-shadow: 0 4px 8px black;
+
+}
+
+.product-card p {
+    margin-top: 10px;
+
+}
+
+.product-card  p span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    
+
+
+}
+
+.product-card__icon--clock {
+    background-image: url(./assets/icons/clock\ 1.png);
+}
+
+.product-card__icon--eye {
+    background-image: url(./assets/icons/eye\ 1.png);
+}
+
+.product-card__icon--money {
+    background-image: url(./assets/icons/dollar-sign\ 1.png);
+}
+
+.product-card__icon--check {
+    background-image: url(./assets/icons/check-circle\ 1.png);
+}
+
+.product-card__title {
+    text-align: start;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.product-card__body {
+    text-align: start;
+    font-size: 1.4rem;
+    color: var(--grey);
+}
+
+/*BITCOINBABY container*/
+.bitcoinbaby-img-container {
+
+    background-image: url(./assets/pictures/bitcoinbaby.png);
+    background-size: cover;
+    background-position: center;
+    height: 390px;
+    min-width: 320px;
+    text-align: center;
+    padding-top: 64px;
+    margin: 0 auto;
+
+}
+
+.bitcoinbaby-img-container h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+/*PLANS container*/
+.main-plans-detail {
+    padding-top: 64px;
+    min-width: 320px;
+}
+
+.main-plans-detail__title {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+}
+
+
+.main-plans-detail__title h2 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.main-plans-detail__title p {
+    margin-top: 24px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--grey);
+}
+
+/*PLANS CARDS*/
+.main-plans-detail__container {
+    margin-top: 70px;
+   
+}
+.slider{
+    /*scroll cards planes*/
+    display: flex;
+    height: 350px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:  x proximity;
+    gap:60px;
+    
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /*para el scroll*/
+    scroll-snap-align: center;
+    margin: 0 auto;
+    width: 65%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 248px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px var(--grey);
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--white);
+
+}
+
+.plan-card__title {
+    top: 12%;
+    left: 50%;
+    position: absolute;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: var(--bitcoin-orange);
+    color: var(--white);
+    transform: translate(-50%, -50px)
+}
+
+.plan-card__content{
+  
+}
+.plan-card__content p:nth-child(1) {
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+
+.plan-card__content p:nth-child(2) {
+    margin-top: 6px;
+    font-size: 5.2rem;
+    font-weight:700;
+    font-family: 'inter';
+}
+.plan-card__content p span{
+    position: relative;
+    top:0;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.plan-card__content p:nth-child(3) {
+    padding: 0 8px;
+    margin-top: 6px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.plan-card__button {
+    display: flex;
+    width: 80%;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 1.5px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    
+}
+.plan-card__button span {
+
+   display: flex;
+   align-items: center;
+   
 }
