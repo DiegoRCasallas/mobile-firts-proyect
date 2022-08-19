@@ -1,0 +1,25 @@
+.main-tables-container{
+display:flex;
+justify-content: center;
+}
+.vector-table{
+display: none;
+}
+.card-table--commissions{
+    margin-right: 0;
+}
+.product-card__container{
+display: flex;
+/* para evitar overflow:  */
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap:wrap;
+width: 930px;
+margin: 0 auto;
+}
+.plans-slider{
+    justify-content: center;
+}
+.plan-card{
+
+}
