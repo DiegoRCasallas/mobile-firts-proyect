@@ -133,6 +133,12 @@ main {
 }
 
 /*TABLES*/
+.card-table, .card-table--commissions{
+    margin-left: 50px;
+}
+.card-table--commissions{
+    margin-right: 50px;
+}
 .main-tables-container {
     text-align: center;
     background-color: var(--off-white);
@@ -302,13 +308,10 @@ main {
 
 }
 
-.product-card  p span {
+.product-card span {
     display: inline-block;
     width: 24px;
     height: 24px;
-    
-
-
 }
 
 .product-card__icon--clock {
@@ -361,6 +364,15 @@ main {
 }
 
 /*PLANS container*/
+
+.card-table--commissions h2{
+    color: var(--secondary-blue);
+
+}
+.card-table--commissions .main-tables-container__update{
+    background-color: var(--soft-blue);
+
+}
 .main-plans-detail {
     padding-top: 64px;
     min-width: 320px;
@@ -387,13 +399,26 @@ main {
     line-height: 1.8rem;
     color: var(--grey);
 }
+/*SLIDER TABLES*/
+    .slider-tables{
+        display: flex;
+        align-items: center;
+        height: 350px;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type:  x proximity;
+        gap:60px;
+       
+    }
 
 /*PLANS CARDS*/
 .main-plans-detail__container {
     margin-top: 20px;
    
 }
-.slider{
+
+
+.plans-slider{
     /*scroll cards planes*/
     display: flex;
     align-items: center;
@@ -519,4 +544,6 @@ main {
     color: var(--off-white);
 
 }
+
+/*MEDIAQUERIES*/
 
